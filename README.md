@@ -77,7 +77,7 @@ kubectl apply -f k8/rabbitmq-consumer.yaml -n rabbitmq-ns
 # kubectl delete -f k8/rabbitmq-consumer.yaml -n rabbitmq-ns
 ```
 
-### 5. ### Add Lumigo token secret
+### 5. Add Lumigo token secret
 
 ```bash
 kubectl create secret generic --namespace rabbitmq-ns lumigo-credentials --from-literal token=<your-lumigo-token>
