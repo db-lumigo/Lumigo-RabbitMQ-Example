@@ -1,0 +1,13 @@
+apiVersion: operator.lumigo.io/v1alpha1
+kind: Lumigo
+metadata:
+  labels:
+    app.kubernetes.io/name: lumigo
+    app.kubernetes.io/instance: lumigo
+    app.kubernetes.io/part-of: lumigo-operator
+  name: lumigo
+spec:
+  lumigoToken:
+    secretRef:
+      name: lumigo-credentials 
+      key: PUT_YOUR_TOKEN

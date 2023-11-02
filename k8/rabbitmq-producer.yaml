@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: producer
-        image: <your-registry-path>/rabbitmq-producer
+        image: diegob/rabbitmq-producer:1

@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: consumer
-        image: <your-registry-path>/rabbitmq-consumer
+        image: diegob/rabbitmq-consumer:1
