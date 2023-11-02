@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbitmq-producer-deployment
+  namespace: rabbitmq-ns
+spec:
+  replicas: 1  # Only 1 replica for the producer
+  selector:
+    matchLabels:
+      app: rabbitmq-producer
+  template:
+    metadata:
+      labels:
+        app: rabbitmq-producer
+    spec:
+      containers:
+      - name: producer
+        image: <your-registry-path>/rabbitmq-producer
